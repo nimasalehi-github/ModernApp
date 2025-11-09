@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import ProfileKit
 @main
 struct ModernAppApp: App {
     var body: some Scene {

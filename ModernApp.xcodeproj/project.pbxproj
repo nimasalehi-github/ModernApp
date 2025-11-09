@@ -11,6 +11,7 @@
 		F91ABDC62EBF9DE80031B6DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91ABDC52EBF9DE80031B6DB /* ContentView.swift */; };
 		F91ABDC82EBF9DEE0031B6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91ABDC72EBF9DEE0031B6DB /* Assets.xcassets */; };
 		F91ABDCB2EBF9DEE0031B6DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91ABDCA2EBF9DEE0031B6DB /* Preview Assets.xcassets */; };
+		F9CA0E3C2EBFADDF0090E885 /* ProfileKit in Frameworks */ = {isa = PBXBuildFile; productRef = F9CA0E3B2EBFADDF0090E885 /* ProfileKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F91ABDC52EBF9DE80031B6DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F91ABDC72EBF9DEE0031B6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F91ABDCA2EBF9DEE0031B6DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9CA0E392EBFAD1F0090E885 /* ProfileKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ProfileKit; path = ModernApp/ProfileKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CA0E3C2EBFADDF0090E885 /* ProfileKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +38,10 @@
 		F91ABDB72EBF9DE70031B6DB = {
 			isa = PBXGroup;
 			children = (
+				F9CA0E392EBFAD1F0090E885 /* ProfileKit */,
 				F91ABDC22EBF9DE80031B6DB /* ModernApp */,
 				F91ABDC12EBF9DE80031B6DB /* Products */,
+				F9CA0E3A2EBFADDF0090E885 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F9CA0E3A2EBFADDF0090E885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = ModernApp;
+			packageProductDependencies = (
+				F9CA0E3B2EBFADDF0090E885 /* ProfileKit */,
+			);
 			productName = ModernApp;
 			productReference = F91ABDC02EBF9DE80031B6DB /* ModernApp.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +354,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9CA0E3B2EBFADDF0090E885 /* ProfileKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProfileKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F91ABDB82EBF9DE80031B6DB /* Project object */;
 }
