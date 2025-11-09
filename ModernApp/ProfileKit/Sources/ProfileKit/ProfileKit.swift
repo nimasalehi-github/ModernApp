@@ -1,6 +1,6 @@
-public struct ProfileKit {
-    public private(set) var text = "Hello, World!"
-
-    public init() {
-    }
-}
+//public struct ProfileKit {
+//    public private(set) var text = "Hello, World!"
+//
+//    public init() {
+//    }
+//}

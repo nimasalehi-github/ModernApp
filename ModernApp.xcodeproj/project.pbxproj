@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F91ABDC42EBF9DE80031B6DB /* ModernAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91ABDC32EBF9DE80031B6DB /* ModernAppApp.swift */; };
+		F91ABDC42EBF9DE80031B6DB /* ModernApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91ABDC32EBF9DE80031B6DB /* ModernApp.swift */; };
 		F91ABDC62EBF9DE80031B6DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91ABDC52EBF9DE80031B6DB /* ContentView.swift */; };
 		F91ABDC82EBF9DEE0031B6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91ABDC72EBF9DEE0031B6DB /* Assets.xcassets */; };
 		F91ABDCB2EBF9DEE0031B6DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91ABDCA2EBF9DEE0031B6DB /* Preview Assets.xcassets */; };
@@ -16,7 +16,7 @@
 
 /* Begin PBXFileReference section */
 		F91ABDC02EBF9DE80031B6DB /* ModernApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModernApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F91ABDC32EBF9DE80031B6DB /* ModernAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernAppApp.swift; sourceTree = "<group>"; };
+		F91ABDC32EBF9DE80031B6DB /* ModernApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernApp.swift; sourceTree = "<group>"; };
 		F91ABDC52EBF9DE80031B6DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F91ABDC72EBF9DEE0031B6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F91ABDCA2EBF9DEE0031B6DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		F91ABDC22EBF9DE80031B6DB /* ModernApp */ = {
 			isa = PBXGroup;
 			children = (
-				F91ABDC32EBF9DE80031B6DB /* ModernAppApp.swift */,
+				F91ABDC32EBF9DE80031B6DB /* ModernApp.swift */,
 				F91ABDC52EBF9DE80031B6DB /* ContentView.swift */,
 				F91ABDC72EBF9DEE0031B6DB /* Assets.xcassets */,
 				F91ABDC92EBF9DEE0031B6DB /* Preview Content */,
@@ -153,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91ABDC62EBF9DE80031B6DB /* ContentView.swift in Sources */,
-				F91ABDC42EBF9DE80031B6DB /* ModernAppApp.swift in Sources */,
+				F91ABDC42EBF9DE80031B6DB /* ModernApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
