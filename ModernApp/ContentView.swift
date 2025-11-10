@@ -1,5 +1,6 @@
 import SwiftUI
 import ProfileKit /*01*/
+import Combine
 
 struct ContentView: View { /*02*/
     @StateObject private var viewModel = ModernAppViewModel() /*03*/
@@ -20,6 +21,7 @@ struct ContentView: View { /*02*/
                 }
             }
         }
+       
     }
 }
 struct ContentView_Previews: PreviewProvider {

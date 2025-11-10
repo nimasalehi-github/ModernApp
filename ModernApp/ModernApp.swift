@@ -1,5 +1,7 @@
 import SwiftUI
 import ProfileKit /*01*/
+import ProfileCRUDKit
+import ProfileDetailKit
 
 @main
 struct ModernApp: App { /*02*/

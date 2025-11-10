@@ -23,6 +23,7 @@ struct ProfileCRUDKitView: View {
                     .onDelete { indexSet in
                         indexSet.map { service.profiles[$0] }.forEach(service.deleteProfile)
                     }
+                    
                 }
                 .navigationTitle("Profiles")
                 .toolbar {

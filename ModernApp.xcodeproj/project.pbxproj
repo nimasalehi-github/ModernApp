@@ -8,15 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F907A94C2EC1F7DC0080B237 /* ProfileCRUDKit in Frameworks */ = {isa = PBXBuildFile; productRef = F907A94B2EC1F7DC0080B237 /* ProfileCRUDKit */; };
+		F90A195D2EC2048F0075E2E6 /* ProfileCRUDKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A195C2EC2048F0075E2E6 /* ProfileCRUDKitView.swift */; };
+		F90A19602EC208AB0075E2E6 /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A195F2EC208AB0075E2E6 /* ProfileDetailView.swift */; };
+		F90A19622EC209100075E2E6 /* ProfileDetailKit in Frameworks */ = {isa = PBXBuildFile; productRef = F90A19612EC209100075E2E6 /* ProfileDetailKit */; };
+		F90A19642EC209360075E2E6 /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A19632EC209360075E2E6 /* ProfileEditView.swift */; };
+		F90A196D2EC216740075E2E6 /* ProfileDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A196C2EC216740075E2E6 /* ProfileDetailViewModel.swift */; };
 		F91ABDC42EBF9DE80031B6DB /* ModernApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91ABDC32EBF9DE80031B6DB /* ModernApp.swift */; };
 		F91ABDC62EBF9DE80031B6DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91ABDC52EBF9DE80031B6DB /* ContentView.swift */; };
 		F91ABDC82EBF9DEE0031B6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91ABDC72EBF9DEE0031B6DB /* Assets.xcassets */; };
 		F91ABDCB2EBF9DEE0031B6DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91ABDCA2EBF9DEE0031B6DB /* Preview Assets.xcassets */; };
 		F9CA0E3C2EBFADDF0090E885 /* ProfileKit in Frameworks */ = {isa = PBXBuildFile; productRef = F9CA0E3B2EBFADDF0090E885 /* ProfileKit */; };
-		F9FC17882EC1E3D8000788D1 /* ProfileCRUDKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FC17872EC1E3D8000788D1 /* ProfileCRUDKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F90A195C2EC2048F0075E2E6 /* ProfileCRUDKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCRUDKitView.swift; sourceTree = "<group>"; };
+		F90A195E2EC205030075E2E6 /* ProfileDetailKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ProfileDetailKit; path = ModernApp/ProfileDetailKit; sourceTree = "<group>"; };
+		F90A195F2EC208AB0075E2E6 /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
+		F90A19632EC209360075E2E6 /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
+		F90A196C2EC216740075E2E6 /* ProfileDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewModel.swift; sourceTree = "<group>"; };
 		F91ABDC02EBF9DE80031B6DB /* ModernApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModernApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91ABDC32EBF9DE80031B6DB /* ModernApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernApp.swift; sourceTree = "<group>"; };
 		F91ABDC52EBF9DE80031B6DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,7 +33,6 @@
 		F91ABDCA2EBF9DEE0031B6DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F9CA0E392EBFAD1F0090E885 /* ProfileKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ProfileKit; path = ModernApp/ProfileKit; sourceTree = "<group>"; };
 		F9FC17852EC1E177000788D1 /* ProfileCRUDKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ProfileCRUDKit; path = ModernApp/ProfileCRUDKit; sourceTree = "<group>"; };
-		F9FC17872EC1E3D8000788D1 /* ProfileCRUDKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCRUDKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90A19622EC209100075E2E6 /* ProfileDetailKit in Frameworks */,
 				F9CA0E3C2EBFADDF0090E885 /* ProfileKit in Frameworks */,
 				F907A94C2EC1F7DC0080B237 /* ProfileCRUDKit in Frameworks */,
 			);
@@ -40,9 +49,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F90A19652EC20BC30075E2E6 /* ProfileDetailKitViews */ = {
+			isa = PBXGroup;
+			children = (
+				F90A196C2EC216740075E2E6 /* ProfileDetailViewModel.swift */,
+				F90A195F2EC208AB0075E2E6 /* ProfileDetailView.swift */,
+				F90A19632EC209360075E2E6 /* ProfileEditView.swift */,
+			);
+			path = ProfileDetailKitViews;
+			sourceTree = "<group>";
+		};
 		F91ABDB72EBF9DE70031B6DB = {
 			isa = PBXGroup;
 			children = (
+				F90A195E2EC205030075E2E6 /* ProfileDetailKit */,
 				F9FC17852EC1E177000788D1 /* ProfileCRUDKit */,
 				F9CA0E392EBFAD1F0090E885 /* ProfileKit */,
 				F91ABDC22EBF9DE80031B6DB /* ModernApp */,
@@ -62,7 +82,8 @@
 		F91ABDC22EBF9DE80031B6DB /* ModernApp */ = {
 			isa = PBXGroup;
 			children = (
-				F9FC17862EC1E394000788D1 /* Views */,
+				F90A19652EC20BC30075E2E6 /* ProfileDetailKitViews */,
+				F90A195C2EC2048F0075E2E6 /* ProfileCRUDKitView.swift */,
 				F91ABDC32EBF9DE80031B6DB /* ModernApp.swift */,
 				F91ABDC52EBF9DE80031B6DB /* ContentView.swift */,
 				F91ABDC72EBF9DEE0031B6DB /* Assets.xcassets */,
@@ -86,14 +107,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F9FC17862EC1E394000788D1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F9FC17872EC1E3D8000788D1 /* ProfileCRUDKitView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +126,7 @@
 			packageProductDependencies = (
 				F9CA0E3B2EBFADDF0090E885 /* ProfileKit */,
 				F907A94B2EC1F7DC0080B237 /* ProfileCRUDKit */,
+				F90A19612EC209100075E2E6 /* ProfileDetailKit */,
 			);
 			productName = ModernApp;
 			productReference = F91ABDC02EBF9DE80031B6DB /* ModernApp.app */;
@@ -169,8 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91ABDC62EBF9DE80031B6DB /* ContentView.swift in Sources */,
+				F90A19602EC208AB0075E2E6 /* ProfileDetailView.swift in Sources */,
+				F90A19642EC209360075E2E6 /* ProfileEditView.swift in Sources */,
 				F91ABDC42EBF9DE80031B6DB /* ModernApp.swift in Sources */,
-				F9FC17882EC1E3D8000788D1 /* ProfileCRUDKitView.swift in Sources */,
+				F90A195D2EC2048F0075E2E6 /* ProfileCRUDKitView.swift in Sources */,
+				F90A196D2EC216740075E2E6 /* ProfileDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +393,10 @@
 		F907A94B2EC1F7DC0080B237 /* ProfileCRUDKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ProfileCRUDKit;
+		};
+		F90A19612EC209100075E2E6 /* ProfileDetailKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProfileDetailKit;
 		};
 		F9CA0E3B2EBFADDF0090E885 /* ProfileKit */ = {
 			isa = XCSwiftPackageProductDependency;
