@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F907A94C2EC1F7DC0080B237 /* ProfileCRUDKit in Frameworks */ = {isa = PBXBuildFile; productRef = F907A94B2EC1F7DC0080B237 /* ProfileCRUDKit */; };
 		F91ABDC42EBF9DE80031B6DB /* ModernApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91ABDC32EBF9DE80031B6DB /* ModernApp.swift */; };
 		F91ABDC62EBF9DE80031B6DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91ABDC52EBF9DE80031B6DB /* ContentView.swift */; };
 		F91ABDC82EBF9DEE0031B6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91ABDC72EBF9DEE0031B6DB /* Assets.xcassets */; };
 		F91ABDCB2EBF9DEE0031B6DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91ABDCA2EBF9DEE0031B6DB /* Preview Assets.xcassets */; };
 		F9CA0E3C2EBFADDF0090E885 /* ProfileKit in Frameworks */ = {isa = PBXBuildFile; productRef = F9CA0E3B2EBFADDF0090E885 /* ProfileKit */; };
+		F9FC17882EC1E3D8000788D1 /* ProfileCRUDKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FC17872EC1E3D8000788D1 /* ProfileCRUDKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		F91ABDC72EBF9DEE0031B6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F91ABDCA2EBF9DEE0031B6DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F9CA0E392EBFAD1F0090E885 /* ProfileKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ProfileKit; path = ModernApp/ProfileKit; sourceTree = "<group>"; };
+		F9FC17852EC1E177000788D1 /* ProfileCRUDKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ProfileCRUDKit; path = ModernApp/ProfileCRUDKit; sourceTree = "<group>"; };
+		F9FC17872EC1E3D8000788D1 /* ProfileCRUDKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCRUDKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9CA0E3C2EBFADDF0090E885 /* ProfileKit in Frameworks */,
+				F907A94C2EC1F7DC0080B237 /* ProfileCRUDKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 		F91ABDB72EBF9DE70031B6DB = {
 			isa = PBXGroup;
 			children = (
+				F9FC17852EC1E177000788D1 /* ProfileCRUDKit */,
 				F9CA0E392EBFAD1F0090E885 /* ProfileKit */,
 				F91ABDC22EBF9DE80031B6DB /* ModernApp */,
 				F91ABDC12EBF9DE80031B6DB /* Products */,
@@ -56,6 +62,7 @@
 		F91ABDC22EBF9DE80031B6DB /* ModernApp */ = {
 			isa = PBXGroup;
 			children = (
+				F9FC17862EC1E394000788D1 /* Views */,
 				F91ABDC32EBF9DE80031B6DB /* ModernApp.swift */,
 				F91ABDC52EBF9DE80031B6DB /* ContentView.swift */,
 				F91ABDC72EBF9DEE0031B6DB /* Assets.xcassets */,
@@ -79,6 +86,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F9FC17862EC1E394000788D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC17872EC1E3D8000788D1 /* ProfileCRUDKitView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,6 +112,7 @@
 			name = ModernApp;
 			packageProductDependencies = (
 				F9CA0E3B2EBFADDF0090E885 /* ProfileKit */,
+				F907A94B2EC1F7DC0080B237 /* ProfileCRUDKit */,
 			);
 			productName = ModernApp;
 			productReference = F91ABDC02EBF9DE80031B6DB /* ModernApp.app */;
@@ -154,6 +170,7 @@
 			files = (
 				F91ABDC62EBF9DE80031B6DB /* ContentView.swift in Sources */,
 				F91ABDC42EBF9DE80031B6DB /* ModernApp.swift in Sources */,
+				F9FC17882EC1E3D8000788D1 /* ProfileCRUDKitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +373,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F907A94B2EC1F7DC0080B237 /* ProfileCRUDKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProfileCRUDKit;
+		};
 		F9CA0E3B2EBFADDF0090E885 /* ProfileKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ProfileKit;

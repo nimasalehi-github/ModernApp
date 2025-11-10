@@ -7,8 +7,8 @@ public actor ModernAppNetworkManager { /*02*/
         print("🌐 [NetworkManager] Fetching profiles...") /*05*/
         try await Task.sleep(nanoseconds: 1_000_000_000) /*06*/
         let profiles = [
-            ModernAppProfile(name: "Nima Salehi", email: "nima@example.com"),
-            ModernAppProfile(name: "Sara Rahimi", email: "sara@example.com")
+            ModernAppProfile(name: "Reza Salehi", email: "reza@example.com"),
+            ModernAppProfile(name: "Nima Salehi", email: "nima@example.com")
         ] /*07*/
         print("✅ [NetworkManager] Profiles fetched: \(profiles.map { $0.name })") /*08*/
         return profiles
