@@ -1,47 +1,57 @@
 //
 //  ProfileCRUDService.swift
-//  
-//
-//  Created by Nima Salehi on 11/12/25.
 //
 
-import Foundation /*01*/
+import Foundation
 
 @MainActor
-public final class ProfileCRUDService: ObservableObject { /*02*/
-    @Published public private(set) var profiles: [ProfileX] = [] /*03*/
+public final class ProfileCRUDService: ObservableObject {
 
-    public init() { /*04*/ }
+    @Published public private(set) var profiles: [ProfileX] = []
 
-    // Simulate network / load initial data
-    public func loadProfiles() async { /*05*/
-        print("🌐 [Service] loading profiles...") /*06*/
-        try? await Task.sleep(nanoseconds: 300_000_000) /*07*/
+    public init() {
+        ABLogger.log(event: "Service Initialized", output: ["profilesCount": profiles.count])
+    }
+
+    public func loadProfiles() async {
+        ABLogger.log(event: "loadProfiles() started")
+
+        try? await Task.sleep(nanoseconds: 300_000_000)
+
         self.profiles = [
             ProfileX(name: "Nima Salehi", email: "nima@example.com"),
             ProfileX(name: "Sara Rahimi", email: "sara@example.com")
-        ] /*08*/
-        print("✅ [Service] loaded: \(profiles.map { $0.name })") /*09*/
+        ]
+
+        ABLogger.log(
+            event: "loadProfiles() finished",
+            output: profiles
+        )
     }
 
-    // Add
-    public func addProfile(_ profile: ProfileX) async { /*10*/
-        profiles.append(profile) /*11*/
-        print("➕ [Service] added: \(profile.name)") /*12*/
+    public func addProfile(_ profile: ProfileX) async {
+        ABLogger.log(event: "addProfile()", input: profile)
+
+        profiles.append(profile)
+
+        ABLogger.log(event: "addProfile() done", output: profiles)
     }
 
-    // Update
-    public func updateProfile(_ profile: ProfileX) async { /*13*/
+    public func updateProfile(_ profile: ProfileX) async {
+        ABLogger.log(event: "updateProfile()", input: profile)
+
         if let idx = profiles.firstIndex(where: { $0.id == profile.id }) {
-            profiles[idx] = profile /*14*/
-            print("✏️ [Service] updated: \(profile.name)") /*15*/
+            profiles[idx] = profile
         }
+
+        ABLogger.log(event: "updateProfile() done", output: profiles)
     }
 
-    // Delete by index set
-    public func deleteProfiles(at offsets: IndexSet) async { /*16*/
-        profiles.remove(atOffsets: offsets) /*17*/
-        print("🗑 [Service] deleted at offsets: \(offsets)") /*18*/
+    public func deleteProfiles(at offsets: IndexSet) async {
+        ABLogger.log(event: "deleteProfiles()", input: Array(offsets))
+
+        profiles.remove(atOffsets: offsets)
+
+        ABLogger.log(event: "deleteProfiles() done", output: profiles)
     }
 }
-//توضیح: Service ایزوله‌شده با @MainActor و @Published private(set) برای انکپسولاسیون. تمام تغییرات از طریق متدها انجام می‌شوند.

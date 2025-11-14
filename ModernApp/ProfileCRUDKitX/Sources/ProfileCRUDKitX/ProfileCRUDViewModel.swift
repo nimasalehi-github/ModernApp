@@ -1,45 +1,58 @@
 //
 //  ProfileCRUDViewModel.swift
-//  توضیح: ViewModel یک لایهٔ ساده بین View و Service است. همهٔ متدها async و MainActor هستند.
-//
-//  Created by Nima Salehi on 11/12/25.
 //
 
-import Foundation /*01*/
+import Foundation
 
 @MainActor
-public final class ProfileCRUDViewModel: ObservableObject { /*02*/
-    @Published public private(set) var profiles: [ProfileX] = [] /*03*/
-    @Published public var isLoading: Bool = false /*04*/
+public final class ProfileCRUDViewModel: ObservableObject {
 
-    private let service = ProfileCRUDService() /*05*/
+    @Published public private(set) var profiles: [ProfileX] = []
+    @Published public var isLoading: Bool = false
 
-    public init() { /*06*/ }
+    private let service = ProfileCRUDService()
 
-    // Load from service
-    public func load() async { /*07*/
-        isLoading = true /*08*/
-        await service.loadProfiles() /*09*/
-        profiles = service.profiles /*10*/
-        isLoading = false /*11*/
+    public init() {
+        ABLogger.log(event: "ViewModel Initialized")
     }
 
-    // Add
-    public func add(name: String, email: String) async { /*12*/
-        let p = ProfileX(name: name, email: email) /*13*/
-        await service.addProfile(p) /*14*/
-        profiles = service.profiles /*15*/
+    public func load() async {
+        ABLogger.log(event: "load() started")
+
+        isLoading = true
+        await service.loadProfiles()
+        profiles = service.profiles
+        isLoading = false
+
+        ABLogger.log(event: "load() finished", output: profiles)
     }
 
-    // Update
-    public func update(_ profile: ProfileX) async { /*16*/
-        await service.updateProfile(profile) /*17*/
-        profiles = service.profiles /*18*/
+    public func add(name: String, email: String) async {
+        let p = ProfileX(name: name, email: email)
+
+        ABLogger.log(event: "add()", input: p)
+
+        await service.addProfile(p)
+        profiles = service.profiles
+
+        ABLogger.log(event: "add() done", output: profiles)
     }
 
-    // Delete
-    public func delete(at offsets: IndexSet) async { /*19*/
-        await service.deleteProfiles(at: offsets) /*20*/
-        profiles = service.profiles /*21*/
+    public func update(_ profile: ProfileX) async {
+        ABLogger.log(event: "update()", input: profile)
+
+        await service.updateProfile(profile)
+        profiles = service.profiles
+
+        ABLogger.log(event: "update() done", output: profiles)
+    }
+
+    public func delete(at offsets: IndexSet) async {
+        ABLogger.log(event: "delete()", input: Array(offsets))
+
+        await service.deleteProfiles(at: offsets)
+        profiles = service.profiles
+
+        ABLogger.log(event: "delete() done", output: profiles)
     }
 }
